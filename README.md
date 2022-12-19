@@ -4,13 +4,13 @@
 ## Problem Domain
 
 - Deploy a Node.js server to AWS EC2.
-  - Express Server code created and used to deploy found [here](./exampleServerDeployed/)
+  - Express Server code created and used to deploy found [here](./exampleServerDeployed/).
 
 ## Processes
 
 ### GUI Process for AWS EC2 Deployment
 
-[GUI Deployment](http://expresslysimple-env.eba-a3xtkyx4.us-west-2.elasticbeanstalk.com/)
+Link to [GUI Deployment](http://expresslysimple-env.eba-a3xtkyx4.us-west-2.elasticbeanstalk.com/).
 
 - Create an AWS account
 - Create an EC2 instance
@@ -23,7 +23,7 @@
 
 ### CLI Process for AWS EC2 Deployment
 
-[CLI Deployment](http://basic-express-server-dev.us-west-2.elasticbeanstalk.com/)
+Link to [CLI Deployment](http://basic-express-server-dev.us-west-2.elasticbeanstalk.com/).
 
 - Install the AWS CLI on your local machine
 - Create Access Keys for your AWS account
