@@ -13,6 +13,7 @@
 Link to [GUI Deployment](http://expresslysimple-env.eba-a3xtkyx4.us-west-2.elasticbeanstalk.com/).
 
 - Create an AWS account
+  - [AWS Free Tier Account](https://aws.amazon.com/free/)
 - Create an EC2 instance
 - Specify the instance type
 - Specify the Environment
@@ -26,15 +27,24 @@ Link to [GUI Deployment](http://expresslysimple-env.eba-a3xtkyx4.us-west-2.elast
 Link to [CLI Deployment](http://basic-express-server-dev.us-west-2.elasticbeanstalk.com/).
 
 - Install the AWS CLI on your local machine
-- Create Access Keys for your AWS account
-- Configure the AWS CLI with your AWS credentials
+  - Using [Homebrew](https://brew.sh/):
+    - `brew install awscli`
+    - `aws --version`
+  - Install the Elastic Beanstalk CLI tools
+    - `brew install awsebcli`
+    - `eb --version`
+- Create a new Access Key for your AWS account from the AWS Management Console
+  - [AWS IAM](https://console.aws.amazon.com/iam/home)
+  - Ensure you securely store the Access Key ID and Secret Access Key in a safe place
+- Configure the AWS CLI with your AWS Access Credentials and region
   - `aws configure`
-- Initialze the AWS Elastic Beanstalk CLI
-  - `eb init`
-- Create an AWS Elastic Beanstalk environment
-  - `eb create`
-- If needed, deploy your application to the AWS Elastic Beanstalk environment
-  - `eb deploy`
+- From inside the root directory of your Node.js application:
+  - Initialize the AWS Elastic Beanstalk CLI
+    - `eb init`
+  - Create an AWS Elastic Beanstalk environment
+    - `eb create`
+  - If needed, deploy your application to the AWS Elastic Beanstalk environment
+    - `eb deploy`
 
 ```bash
 2022-12-19 20:01:00    INFO    Instance deployment completed successfully.
